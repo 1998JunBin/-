@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bigbox{
+            width: 100%;
+            height: auto;
+        }
+        #bigbox .w_box{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        #bigbox .w_box>div{
+            width: calc(85% / 3);
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(116, 125, 133,0.5);
+            overflow: hidden;  
+        }
+        #bigbox .w_box .img_text img{
+            width: 100%;
+            height: auto;
+        }
+        #bigbox .w_box .img_text p:nth-of-type(1){
+            
+        }
+        #bigbox .w_box .img_text p{
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            background-color: #429fdd;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="bigbox">
+    <div class="w_box">
+        <div class="img_text">
+            <img src="" alt="pic">
+            <p>为全球电容使用者提供优秀的供应链服务</p>
+        </div>
+        <div class="img_text">
+            <img src="" alt="pic">
+            <p>通过对大数据算法，致力实现客户0库存</p>
+        </div>
+        <div class="img_text">
+            <img src="" alt="pic">
+            <p>实现mlcc的库存管理和应用替代，同时有完善的品质管控和解决方案</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

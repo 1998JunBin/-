@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bigbox{
+            width: 100%;
+            height: auto;
+        }
+        #bigbox .w_box{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #bigbox .w_box .left{
+            width: 30%;
+            height: auto;
+        }
+        #bigbox .w_box .left .title{
+            font-size: 22px;
+            color: #000;
+            font-weight: bold;
+            line-height: 2em;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        #bigbox .w_box .left .t_cont{
+            font-size: 16px;
+            color: #000;
+            font-weight: lighter;
+            line-height: 2em;
+            width: 100%;
+            
+        }
+
+        #bigbox .w_box .right{
+            width: 60%;
+            height: auto;
+        }
+        #bigbox .w_box .right .img_text{
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgb(116, 125, 133,0.5);
+            margin-bottom: 30px;        
+        }
+        #bigbox .w_box .right .img_text img{
+            display: inline-block;
+            width: 38px;
+            height: auto;
+            margin-right: 20px;
+        }
+        #bigbox .w_box .right .img_text span{
+            display: inline-block;
+            width: auto;
+            font-size: 16px;
+            color: #000;
+            font-weight: lighter;
+            line-height: 2em;
+        }
+        
+    </style>
+</head>
+<body>
+<div id="bigbox">
+    <div class="w-box">
+        <div class="left">
+            <p class="title">
+                如何进行质量管控
+            </p>
+            <p class="t_cont">
+                良好的订单管理系统是公司存在的基础。经过数年间不断的探索尝试，如今乃棠的订单管理系统已非常完善。从客户信息录入，到客户询价，订单生成，检测计划，检测实施，检测结果审核，报告生成等，都有详细的“流程检查表”对每一流程进行检查审核，以确保信息的正确性。此流程检查表符合国际、行业以及公司内部标准，且公司内部会对此检查表定期审核。
+            </p>
+        </div>
+        <div class="right">
+            <div class="img_text">
+                <img src="" alt="pic">
+                <span>当检测完成，检测控制工程师对已记录检测信息和结果进行分析审查，确认无误后，再由高级工程师审核批准。如果工程师或检测技术人员在任何阶段对检测结果有疑问，或是与销售备注的检测计划不相符，都可以停止继续操作并返回上一阶段。销售亦有权审核报告，确保检测内容与客户要求相符，最后再发布报告给客户。</span>
+            </div>
+            <div class="img_text">
+                <img src="" alt="pic">
+                <span>同时，如果在检测过程中，发现其中一些样片已损坏，因此发布的报告显示为不合格。若客户要求添加挑选项目，将所有损坏的样片移除，我们则会发布第二份修订报告，该修订报告包含挑选结果，收货数量以及移除的损坏样片的数量。</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

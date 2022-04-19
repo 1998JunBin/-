@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        #bigbox{
+            width: 100%;
+            height: auto;
+        }
+        #bigbox .w_box{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        #bigbox .w_box>div{
+            width: calc(95% / 2);
+            height: auto;
+        }
+        #bigbox .w_box .left .text{
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        #bigbox .w_box .left .text .title{
+            font-size: 22px;
+            line-height: 2em;
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        #bigbox .w_box .left .text .t_cont{
+            font-size: 16px;
+            line-height: 2em;
+            color: #000;
+            font-weight: lighter;
+        }
+        #bigbox .w_box .right{
+            display: flex;
+            justify-content: space-around;
+        }
+        #bigbox .w_box .right>div{
+            width: calc(70% / 2);
+            height: auto;
+        }
+        #bigbox .w_box .right .img_text img{
+            width: 100%;
+            height: auto;
+        }
+        #bigbox .w_box .right .img_text p{
+            width: 100%;
+            height: auto;
+            font-size: 16px;
+            color: #fff;
+            background-color: rgb(64, 161, 226);
+            padding: 20px 10px;
+            text-align: center;
+        }
+        #bigbox .w_box .right .img_text:nth-of-type(1){
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="bigbox">
+    <div class="w_box">
+        <div class="left">
+            <div class="text">
+                <p class="title">
+                    定址于深圳，服务于全国
+                </p>
+                <p class="t_cont">
+                    公司座落于全国电子元件集散重镇---深圳，交通运输方便灵活。公司走多元化发展道路，形成了一张覆盖广、素质高，发展稳的全国销售网络。
+                </p>
+            </div>
+            <div class="text">
+                <p class="title">
+                    乃棠实验检测
+                </p>
+                <p class="t_cont">
+                    MLCC来料检测、数据中心、元器件品质检测体系、社媒分享与培训
+                </p>
+            </div>
+            <div class="text">
+                <p class="title">
+                    新永利电子
+                </p>
+                <p class="t_cont">
+                    来料品质检测体系筛查99%不良率，专注MLCC领域，渠道正，价格好，配送快！
+                </p>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="img_text">
+                <img src="" alt="pic">
+                <p>乃棠实验检测</p>
+            </div>
+            <div class="img_text">
+                <img src="" alt="pic">
+                <p>新永利电子</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

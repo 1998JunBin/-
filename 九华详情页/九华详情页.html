@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0px;padding: 0px;}
+        #top_box{
+            max-width: 1400px;
+            width: 100%;
+            height: auto;
+            background: url(./top1.jpg) no-repeat;
+            background-size: 100%;
+            display: flex;
+
+            justify-content: space-between;
+        }
+        #top_box .left_box{
+            width: 45%;
+            height: auto;
+            display: flex;
+            padding: 10px 70px;
+            justify-content: space-between;
+        }
+        #top_box .left_box .box1{
+            width: 50%;
+            height: auto;
+            
+        }
+        #top_box .left_box .box1:nth-of-type(2){
+            margin-top: 50px;
+        }
+        #top_box .left_box .box1:nth-of-type(2)  .box1_img{
+            margin-top: 30px;
+        }
+        #top_box .left_box .box1 .box1_img{
+            min-height: 390px;
+            min-width: 275px;
+            max-width: 280px;
+            border-radius: 30px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                  
+        }
+        
+        #top_box .left_box .box1 .box1_img img{
+            width: 80%;
+        }
+        #top_box .left_box .box1 .box1_text{
+            min-height: 390px;
+            min-width: 275px;
+            max-width: 280px;
+            border-radius: 30px;
+            background-color: #fff;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #top_box .left_box .box1 .box1_text img{
+            width: auto;
+            height: auto;
+            margin-top: 80px;
+            margin-bottom: 30px;
+        }
+        #top_box .left_box .box1 .box1_text .box2_text_cont{
+            width: auto;
+            text-align: center;
+        }
+        #top_box .left_box .box1 .box1_text .box2_text_cont p:nth-of-type(1){
+            font-size:20px ;
+            color: black;
+            font-weight: bold;
+            
+        }
+        #top_box .left_box .box1 .box1_text .box2_text_cont p:nth-of-type(2){
+            font-size: 14px;
+            color: #777777;
+            font-weight: normal;
+            margin-top: 20px;
+            line-height: 1.5em;
+        }
+        #top_box .right_box{
+            width: 43%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #top_box .right_box .right_box_text .title_en{
+            width: auto;
+            font-size: 44px;
+            font-weight: bold;
+            color:#dddddd ;
+            text-transform: uppercase;
+            
+        }
+        #top_box .right_box .right_box_text .title_zh{
+            width: auto;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333333;
+        }
+        #top_box .right_box .right_box_text .text_cont{
+            width: 100%;
+            font-size:16px ;
+            color: #666666;
+            line-height: 2em;
+            font-weight: 100;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+<div id="top_box">
+    <div class="left_box">
+        <div class="box1">
+            <div class="box1_img">
+                <img src="./顶部/grass.jpg" alt="pic">
+            </div>
+            <div class="box1_text">
+                <img src="./顶部/icon2.png" alt="pic">
+                <div class="box2_text_cont">
+                    <p>纯天然野生药材</p>
+                    <p>单方制剂<br>安全无毒副作用<br>适用人群广</p>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="box1_text">
+                <img src="./顶部/icon1.png" alt="pic">
+                <div class="box2_text_cont">
+                    <p>“抗感染植物药”</p>
+                    <p>清热消炎、止咳化痰</p>
+                </div>
+            </div>
+            <div class="box1_img">
+                <img src="./顶部/包装图.jpg" alt="pic">
+            </div>
+        </div>
+    </div>  
+    <div class="right_box">
+        <div class="right_box_text">
+            <div class="title_box"> 
+                <p class="title_en">
+                    product
+                </p>
+                <p class="title_en">
+                    introduction
+                </p>
+                <p class="title_zh">
+                    产品介绍
+                </p>
+            </div>
+            <div class="text_cont">
+                <p>
+                    百蕊颗粒属公司倾力打造的拳头产品之一，是取自纯天然野生抗感染植物药百蕊草的单方独家品种。享有"抗感染植物药"的美誉，其清热消炎、止咳化痰功效显著，且安全无毒副作用，尤其适合婴幼儿、产妇、老年人、糖尿病患者、肝肾功能不全等特殊人群使用。单方制剂，纯天然野生药材，安全、适应人群广；
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</body>
+</html>

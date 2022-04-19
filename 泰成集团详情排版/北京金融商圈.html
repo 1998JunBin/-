@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .bigbox {
+            width: 70%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .bigbox .box1_top {
+            width: 100%;
+            height: auto;
+            margin-top: 70px;
+        }
+
+        .bigbox .box1_top .top1_title {
+            font-size: 28px;
+            color: #9b8e7f;
+            line-height: 1.5em;
+            text-align: center;
+        }
+
+        .bigbox .box1_top .top1_cont {
+            font-size: 16px;
+            color: #000000;
+            line-height: 2em;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .bigbox .box1_top .top1_img {
+            width: auto;
+            height: auto;
+            margin-top: 50px;
+        }
+
+        .bigbox .box2_top {
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 154px;
+        }
+
+        .bigbox .box2_top .top2_text {
+            width: 50%;
+            height: auto;
+        }
+
+        .bigbox .box2_top .top2_text .top2_title {
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .bigbox .box2_top .top2_text .top2_cont {
+            font-size: 16px;
+            color: #666;
+            line-height: 2.5em;
+            margin-top: 40px;
+        }
+
+        .bigbox .box3_hr {
+            width: 100%;
+            min-height: 20px;
+            margin-top: 50px;
+        }
+
+        .bigbox .box3_hr hr {
+            color: #9b8e7f;
+        }
+
+        .bigbox .box4_text {
+            width: 100%;
+            height: auto;
+            margin-top: 70px;
+        }
+
+        .bigbox .box4_text .box4_title {
+            width: 100%;
+            height: auto;
+            font-size: 26px;
+            color: #000000;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .bigbox .box4_text .box4_cont {
+            width: 100%;
+            height: auto;
+            font-size: 16px;
+            color: #000000;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .bigbox .box5{
+            width: 100%;
+            height: auto;
+            margin:90px 90px;
+            display: flex;
+        }
+        .bigbox .box5 .box5_text{
+            width: 25%;
+            height: auto;
+        }
+        .bigbox .box5 .box5_text .box5_title{
+            font-size: 70px;
+            color: #9b8e7f;
+            line-height: 1em;
+            font-weight: bold;
+        }
+        .bigbox .box5 .box5_text .box5_con{
+            font-size: 16px;
+            color: #9b8e7f;
+            line-height: 1.5em;
+            margin-top: 10px;
+        }
+        .bigbox .box6{
+            width: 100%;
+            height: auto;
+            margin-top: 130px;
+            display: flex;
+        }
+        .bigbox .box6 .box6_text{
+            width: 60%;
+            height: auto;
+        }
+        .bigbox .box6 .box6_text .box6_title{
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+        }
+        .bigbox .box6 .box6_text .box6_con{
+            margin-top: 45px;
+            font-size:16px;
+            line-height: 2em;
+            color: #666;
+            padding-right: 100px;
+        }
+        .bigbox .box6 .box6_text .box6_bottom{
+            margin-top: 80px;
+            font-size: 14px;
+            color: #bfbfbf;
+            line-height: 2em;
+        }
+        .bigbox .box6 .box6_img{
+            width: 40%;
+            height: auto;
+        }
+        .bigbox2{
+            width: 100%;
+            background-color: #222222;
+            padding: 74px 0px;
+            margin-top: 60px;
+        }
+        .bigbox2 .bigbox .box7{
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        .bigbox2 .bigbox .box7 .box7_text{
+            margin-left: 40px;
+        }
+        .bigbox2 .bigbox .box7 .box7_text .box7_title{
+            font-size: 26px;
+            color: #ffffff;
+            font-weight: bold;
+            line-height: 2em;
+        }
+        .bigbox2 .bigbox .box7 .box7_text .box7_con{
+            margin-top: 45px;
+            font-size:16px ;
+            color: #ffffff;
+            line-height: 2em;
+        }
+        .bigbox .box8{
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top:140px;
+        }
+        .bigbox .box8 .box8_text{
+            width: 50%;
+            height: auto;
+            padding-right: 100px;
+        }
+        .bigbox .box8 .box8_text .box8_title{
+            font-size: 26px;
+            font-weight: bold;
+            color: #000000;
+        }
+        .bigbox .box8 .box8_text .box8_con{
+            margin-top: 40px;
+            font-size: 16px;
+            color: #434343;
+            line-height: 2em;
+        }
+        .bigbox .box8 .box8_img{
+            width: 50%;
+            height: auto;
+        }
+        .bigbox .box9{
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top:40px ;
+        }
+        .bigbox .box9 .box9_img{
+            width: 50%;
+            height: auto;
+        }
+        .bigbox .box9 .box9_text{
+            width: 50%;
+            height: auto;
+            padding-left: 100px;
+        }
+        .bigbox .box9 .box9_text .box9_title{
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+        }
+        .bigbox .box9 .box9_text .box9_con{
+            margin-top: 50px;
+            font-size: 16px;
+            color: #434343;
+            line-height: 2em;
+        }
+        .bigbox3{
+            width: 100%;
+            height: auto;
+            background-color: #9b8e7f;
+            padding: 74px 0px;
+            margin-top: 60px;
+        }
+        .bigbox3 .bigbox .box10{
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        .bigbox3 .bigbox .box10 .box10_text{
+            width: 50%;
+            height: auto;
+        }
+        .bigbox3 .bigbox .box10 .box10_text .box10_title{
+            font-size: 26px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .bigbox3 .bigbox .box10 .box10_text .box10_con{
+            font-size: 16px;
+            color: #fff;
+            line-height: 2em;
+            margin-top: 45px;
+        }
+        .bigbox3 .bigbox .box10 .box10_img{
+            width: 50%;
+            height: auto;
+            padding-left: 100px;
+        }
+        .bigbox3 .bigbox .box10 .box10_img img{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box11{
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+        }
+        .bigbox .box11 .box11_title{
+            font-size: 34px;
+            color: #434343;
+            text-align: center;
+            line-height: 1em;
+            font-weight: bold;
+        }
+        .bigbox .box11 .box11_img{
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .bigbox .box11 .box11_img img{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box11 .box11_con{
+            font-size: 16px;
+            line-height: 2em;
+            color: #000000;
+            margin-top: 60px;
+        }
+        .bigbox .box12{
+            width: 100%;
+            height: auto;
+            margin-top: 50px;
+        }
+        .bigbox .box12 .box12_cont{
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        .bigbox .box12 .box12_cont .box12_img{
+            width: 50%;
+            height: auto;
+        }
+        .bigbox .box12 .box12_cont .box12_img img{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box12 .box12_cont .box12_text{
+            width: 50%;
+            height: auto;
+            background-color: #f0eeec;
+            max-height: 377.39px;
+        }
+        .bigbox .box12 .box12_cont .box12_text .box12_title{
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 2em;
+            color: #000000;
+            padding-top: 50px;
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+        .bigbox .box12 .box12_cont .box12_text .box12_con{
+            font-size: 16px;
+            line-height: 2em;
+            color: #000000;
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="box1_top">
+            <p class="top1_title">
+                北京金融街商圈，超级核心<br>
+                国之重器，影响世界的中国金融总部
+            </p>
+            <p class="top1_cont">
+                金融街集中了中国人民银行、中国银监会、中国证监会、中国保监会等中国最高金融决策和监管机构，几乎所有有关中国<br>
+                金融的重大决策都在这里酝酿、讨论和最终形成，加上畅通发达的通讯系统，及时汇集、传递着全国乃至世界各地的经济<br>
+                和金融信息。地位之重，诚如与共和国共呼吸，与世界经济脉搏同跳动。
+            </p>
+            <img class="top1_img" src="img1.png" alt="pic1">
+        </div>
+        <div class="box2_top">
+            <div class="top2_text">
+                <p class="top2_title">
+                    超级核心，身价注定不凡
+                </p>
+                <p class="top2_cont">
+                    金融街天然的核心位置，毗邻天安门，以首都金融指挥中心的功能来部署。<br>
+
+
+                    1993年10月，国务院批复的《北京城市总体规划（1991年-2010年)》明确提出:“在西二环阜成门至复兴门一带，建设国家级金融管理中心，集中安排国家级银行总行和非银行金融机构总部。”<br>
+
+
+                    在2005年国务院批复的《北京城市总体规划(2004年-2020年)》中，再一次明确金融街是国家金融管理中心。<br>
+
+
+                    2008年，在全金融总体规划中，进一步确定了金融街在首都金融业中的核心地位，提出要将金融街建成首都金融主中心。
+                </p>
+            </div>
+            <div class="top2_img">
+                <img src="img2.png" alt="pic">
+            </div>
+        </div>
+        <div class="box3_hr">
+            <hr>
+        </div>
+        <div class="box4_text">
+            <div class="box4_title">
+                <p>
+                    世界级繁华金融社区
+                </p>
+            </div>
+            <div class="box4_cont">
+                <p>
+                    北京金融街，汇聚全国乃至全球精英及高价值企业，发挥着影响世界的力量。
+                </p>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="box5_text">
+                <p class="box5_title">
+                    70+
+                </p>
+                <p class="box5_con">
+                    多家世界顶尖级<br>
+                    外资金融机构和国际组织
+                </p>
+            </div>
+            <div class="box5_text">
+                <p class="box5_title">
+                    64
+                </p>
+                <p class="box5_con">
+                    栋重点商务楼宇
+                </p>
+            </div>
+            <div class="box5_text">
+                <p class="box5_title">
+                    15
+                </p>
+                <p class="box5_con">
+                    家金融行业协会
+                </p>
+            </div>
+            <div class="box5_text">
+                <p class="box5_title">
+                    1886
+                </p>
+                <p class="box5_con">
+                    金融机构1886家
+                </p>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="box5_text">
+                <p class="box5_title">
+                    885
+                </p>
+                <p class="box5_con">
+                    法人机构885家
+                </p>
+            </div>
+            <div class="box5_text">
+                <p class="box5_title">
+                    175
+                </p>
+                <p class="box5_con">
+                    总部型机构175家
+                </p>
+            </div>
+            <div class="box5_text">
+                <p class="box5_title">
+                    108
+                </p>
+                <p class="box5_con">
+                    金融机构资产规模达108万亿元<br>
+                    占全国总规模的34%
+                </p>
+            </div>
+            <div class="box5_text" style="visibility: hidden;">
+                <p class="box5_title">
+                    70+
+                </p>
+                <p class="box5_con">
+                    多家世界顶尖级<br>
+                    外资金融机构和国际组织
+                </p>
+            </div>
+        </div>
+        <div class="box6">
+            <div class="box6_text">
+                <p class="box6_title">
+                    鹤立金融商圈塔尖
+                </p>
+                <p class="box6_con">
+                    锦什坊街参拾伍——<br>
+
+                    北京金融街商圈内唯一的一座西方古典主义风格的大型建筑，<br>
+
+                    它融汇着全球金融文明，以古典主义的形式站立在全球瞩目的金融街核心，闪耀着金融界的璀璨荣光。且与国家政协礼堂一路之隔，区位之显赫<br>
+                    <br>
+                    锦什坊街参拾伍号地理位置绝佳，区域内汇聚了各级金融监管部门及众多国内大型金融机构和国企总部。为各类行政办事，提供高效便捷的半小时商务效益圈。
+                </p>
+                <p class="box6_bottom">
+                    中国银行保险监督管委会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国证监会上市部&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北交所<br>
+                    中国证券监督管理委员会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电子商务部网站管理处&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;东方基金<br>
+                    中国证券投资基金业协会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京产权交易所        
+                </p>
+            </div>
+            <div class="box6_img">
+                <img src="img3.png" alt="pic">
+            </div>
+        </div>
+    </div>
+    <div class="bigbox2">
+         <div class="bigbox">
+            <div class="box7">
+                <div class="box7_img">
+                    <img src="img4.png" alt="pic">
+                </div>
+                <div class="box7_text">
+                    <p class="box7_title">
+                        立体交通网络，商务高效通达
+                    </p>
+                    <p class="box7_con">
+                        多维交通网络十分发达，<br>
+                        
+                        6、4、2、1号线轨道纵横交错;<br>
+                        
+                        3分钟即可上西二环速达全城;<br>
+                        
+                        另外，到北京南站25分钟车程，<br>
+                    
+                        北京西站自驾20分钟即达，距离首都机场40分钟车程，<br>
+                        
+                        最远距离的大兴机场50分钟亦可轻松抵达
+                    </p>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class="bigbox">
+        <div class="box8">
+            <div class="box8_text">
+                <p class="box8_title">
+                    天赋贵族基因，名门巨著
+                </p>
+                <p class="box8_con">
+                    锦什坊街参拾伍号天赋贵族基因，隶属北京国有资本经营管理中心。<br>
+
+                    北京国有资本经营管理中心是北京市属国有独资大型投资控股公司，<br>
+
+                    是北京市国资国企改革的资本投资运营试点单位之一。<br>
+                    <br>
+                    大楼由北京国有资本经营管理中心邀请国际知名的新古典主义建筑设计所哈特曼·考克斯建筑事务所主导设计。
+                </p>
+            </div>
+            <div class="box8_img">
+                <img src="img5.png" alt="pic">
+            </div>
+        </div>
+        <div class="box9">
+            <div class="box9_img">
+                <img src="img6.jpg" alt="pic">
+            </div>
+            <div class="box9_text">
+                <p class="box9_title">
+                    新古典之美，每一处均为惊喜
+                </p>
+                <p class="box9_con">
+                    主入口为古典三联拱门设计，全部为铜质型材，<br>
+                    有序而独具古典气息;室内大堂为无柱设计，打造旷阔视合，<br>
+                    配合透光云石板藻井吊顶设计，打造出无与伦比的天际线景观。<br>
+                    <br>    
+                    空间惊喜来自于大堂之上的7层通高“超级中庭”。<br>
+                    它藏于建筑的第四层位置，从电梯出来，<br>
+                    再次豁然开朗的感觉，<br>
+                    仿佛把我们带到上个世纪纽约华尔街的黄金时代。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bigbox3">
+        <div class="bigbox">
+            <div class="box10">
+                <div class="box10_text">
+                    <p class="box10_title">
+                        自带高端商务配套
+                    </p>
+                    <p class="box10_con">
+                        自有优质配套服务，为商务提供举步即达的便捷。<br>
+                        负一层的员工餐厅拥有星级的用餐环境以及具备军工级保证的食材，营养健康;大楼一层有单品丰富的便利店，咖啡、食品、日用品等，<br>
+                        还有高档红酒专柜，让商务多一份优雅。<br>
+                        同层还有高级西服定制及洗衣店，解决城市精英的生活琐碎之事<br>
+                        <br>
+                        大楼五层会议中心提供各类高端专属会议服务，全尺寸无柱设计，满足不同规模会议，设施匹配国际高端会议室标准需求
+                    </p>
+                </div>
+                <div class="box10_img">
+                    <img src="img7.jpg" alt="pic">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bigbox">
+        <div class="box11">
+            <p class="box11_title">
+                项目展示
+            </p>
+            <div class="box11_img">
+                <img src="img8.jpg" alt="pic">
+            </div>
+            <p class="box11_con">  
+                总建筑面积：82336平方米&nbsp;&nbsp;&nbsp;&nbsp;楼层：12层&nbsp;&nbsp;&nbsp;&nbsp;净&nbsp;高：2.8米&nbsp;&nbsp;&nbsp;&nbsp;空调：四管制中央空调&nbsp;&nbsp;&nbsp;&nbsp;开发商：金融街控股股份有限公司<br>
+                标准层面积：5600平方米&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;层高：4.1米&nbsp;&nbsp;&nbsp;&nbsp;停车场：273个&nbsp;&nbsp;&nbsp;&nbsp;电梯：14部高速电梯&nbsp;&nbsp;&nbsp;&nbsp;物业公司：仲量联行物业管理有限公司
+            </p>
+        </div>
+        <div class="box12">
+            <div class="box12_cont">
+                <div class="box12_img">
+                    <img src="img9.jpg" alt="pic">
+                </div>
+                <div class="box12_text">
+                    <p class="box12_title">
+                        前台    
+                    </p>
+                    <p class="box12_con">
+                        尊贵典雅的户内前台，以天然大理石饰面，配与深褐色板材，碰撞出稳重严谨的气息。
+                    </p>
+                </div>
+            </div>
+            <div class="box12_cont">
+                <div class="box12_text">
+                    <p class="box12_title">
+                        办公区    
+                    </p>
+                    <p class="box12_con">
+                        大楼五层会议中心提供各类高端专属会议服务，全尺寸无柱设计，满足不同规模会议，设施匹配国际高端会议室标准需求。
+                    </p>
+                </div>
+                <div class="box12_img">
+                    <img src="img10.jpg" alt="pic">
+                </div>
+            </div>
+            <div class="box12_cont">
+                <div class="box12_img">
+                    <img src="img11.jpg" alt="pic">
+                </div>
+                <div class="box12_text">
+                    <p class="box12_title">
+                        经理办公区   
+                    </p>
+                    <p class="box12_con">
+                        空间运用稳重的深色调为主,<br>
+                        打造专业权威的企业形象, <br>                      
+                        灯光则由专业设计师调教设计,  <br>                     
+                        将筒灯、泛光灯带巧妙结合形成—套  <br>                    
+                        巢式照明系统。
+                    </p>
+                </div>
+            </div>
+            <div class="box12_cont">
+                <div class="box12_text">
+                    <p class="box12_title">
+                        高管办公室    
+                    </p>
+                    <p class="box12_con">
+                        格局以灵活易升级户型为主，<br>
+                        为极具发展潜力的中小企业提供一套高效入驻的办公空间。
+                    </p>
+                </div>
+                <div class="box12_img">
+                    <img src="img12.jpg" alt="pic">
+                </div>
+            </div>
+            <div class="box12_cont">
+                <div class="box12_img">
+                    <img src="img13.jpg" alt="pic">
+                </div>
+                <div class="box12_text">
+                    <p class="box12_title">
+                        会议室    
+                    </p>
+                    <p class="box12_con">
+                        户内会议室，在色彩与线条的搭配下，轻奢简洁而不沉闷，<br>
+                        随时开始一场正式或非正式的会议。
+                    </p>
+                </div>
+            </div>
+            <div class="box12_cont">
+                <div class="box12_text">
+                    <p class="box12_title">
+                        办公间茶水    
+                    </p>
+                    <p class="box12_con">
+                        复合型功能空间，为每一平方提供更多可能性，为在工作中的商务精英多一份人文关怀。
+                    </p>
+                </div>
+                <div class="box12_img">
+                    <img src="img14.jpg" alt="pic">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

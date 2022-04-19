@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px;padding: 0px;}
+        .bigbox{
+            width: 70%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .bigbox .box1{
+            width: 100%;
+            height: auto;
+            margin-top: 70px;
+        }
+        .bigbox .box1 .box1_text{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box1 .box1_text .box1_title{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            font-size:28px;
+            color:#9b8e7f ;
+            line-height: 35px;
+        }
+        .bigbox .box1 .box1_text .box1_con{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            font-size: 16px;
+            color: #000000;
+            line-height: 20px;
+            margin-top: 30px;
+            
+        }
+
+        .bigbox .box1  .box1_pic{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .bigbox .box1  .box1_pic img{
+            width: 100%;
+        }
+        .bigbox .box2{
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 100px;
+        }
+        .bigbox .box2 .box2_text{
+            width: 30%;
+            height: 400px;
+            background-color: #9b8e7f;
+            padding-top: 50px;
+            padding-left: 30px;
+            margin-top: 30px;
+            margin-left: -10px;
+        }
+        .bigbox .box2 .box2_text .box2_title{
+            font-size: 26px;
+            color: #fff;
+            font-weight: bold;
+            line-height: 30px;
+        }
+    
+        .bigbox .box2 .box2_text .box2_con{
+            font-size: 16px;
+            color: #fff;
+            line-height: 2em;
+            margin-top: 30px;
+        }
+        .bigbox .box2 .box2_text .box2_con2{
+            font-size: 16px;
+            color: #fff;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+        .bigbox .box2 .box2_img{
+            width: 50%;
+            height: auto;
+        }
+        .bigbox .box2 .box2_img img{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box3{
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 100px;
+        }
+        .bigbox .box3_img{
+            width: 60%;
+            height: auto;
+        }
+        .bigbox .box3_img img{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box3_text{
+            width: 40%;
+            height: auto;
+        }
+        .bigbox .box3_text .box3_title{
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+        }
+        .bigbox .box3_text .box3_text_img{
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .bigbox .box3_text .box3_text_img img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .bigbox .box4{
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+        }
+        .bigbox .box4 .box4_text{
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+        .bigbox .box4 .box4_text .box4_title{
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+            line-height: 30px;
+        }
+        .bigbox .box4 .box4_img{
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 20px;
+        }
+        .bigbox .box4 .box4_img .box4_img_cont{
+            width: 50%;
+            height: auto;
+            text-align: center;
+        }
+        .bigbox .box4 .box4_img .box4_img_cont img{
+            width: 85%;
+            max-height: 429px;
+        }
+        .bigbox .box4 .box4_img .box4_img_cont p{
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .bigbox2{
+            width: 100%;
+            height: auto;
+            background-color:#fff ;
+            padding-top: 34px;
+            padding-bottom: 34px;
+            margin-top: 66px;
+        }
+        .bigbox2 .bigbox .box5{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox2 .bigbox .box5 .box5_title{
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+            line-height: 30px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .bigbox2 .bigbox .box5 .box5_cont{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .bigbox2 .bigbox .box5 .box5_cont .box5_img_text{
+            width: 40%;
+            height: auto;
+            position: relative;
+        }
+        .bigbox2 .bigbox .box5 .box5_cont .box5_img_text img{
+            width: 100%;
+            height: auto;
+            min-height: 200px;
+        }
+        .bigbox2 .bigbox .box5 .box5_cont .box5_img_text .box5_text{
+            width: 100%;
+            height: auto;
+            font-size: 16px;
+            text-align: center;
+            float: left;
+            position: absolute;
+            bottom: 3px;
+            padding: 10px 0px;
+            background-color: rgb(155,142,127,0.7);
+            color: #fff;
+            line-height: 1.5em;
+        }
+        .bigbox .box6{
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+        }
+        .bigbox .box6 .box6_title{
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+        .bigbox .box6 .box6_title p{
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+            line-height: 30px;
+        }
+        .bigbox .box6 .box6_img_text{
+            width: 100%;
+            height: auto;
+            
+        }
+        .bigbox .box6 .box6_img_text .box6_cont{
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        .bigbox .box6 .box6_img_text .box6_cont .box6_img{
+            width: 70%;
+            height: auto;
+        }
+        .bigbox .box6 .box6_img_text .box6_cont .box6_img img{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box6 .box6_img_text .box6_cont .box6_text{
+            width: 30%;
+            height: auto;
+        }
+        .bigbox .box6 .box6_img_text .box6_cont .box6_text .box6_text_cont{
+            width: 45%;
+            height: 30%;
+            font-size: 26px;
+            background-color: #999;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 30px;
+            padding-left: 30px;
+            padding-top: 30px;
+            margin-left: -10px;
+        }
+        .bigbox .box6 .box6_img_text{
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+        .bigbox .box6 .box6_img_text .box6_cont2{
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        .bigbox .box6 .box6_img_text .box6_cont2 .box6_img2{
+            width: 70%;
+            height: auto;
+        }
+        .bigbox .box6 .box6_img_text .box6_cont2 .box6_img2 img{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box6 .box6_img_text .box6_cont2 .box6_text2{
+            width: 30%;
+            height: auto;
+            z-index: 99;
+        }
+        .bigbox .box6 .box6_img_text .box6_cont2 .box6_text2 .box6_text_cont2{
+            width: 45%;
+            height: 30%;
+            font-size: 26px;
+            background-color: #999;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 30px;
+            padding-left: 30px;
+            padding-top: 30px;
+            margin-left: 200px;
+        }
+        .bigbox .box7{
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+        }
+        .bigbox .box7 .box7_text{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box7 .box7_text .box7_title{
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+            line-height: 30px;
+            text-align: center;
+        }
+        .bigbox .box7 .box7_cont{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box7 .box7_cont .box7_img{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .bigbox .box7 .box7_cont .box7_img img{
+            width: 33%;
+            height: auto;
+            display: inline-block;
+        
+        }
+        .bigbox .box20{
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+        }
+        .bigbox .box20 .box20_cont{
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        .bigbox .box20 .box20_cont .box20_img{
+            width: 70%;
+            height: auto;
+        }
+        .bigbox .box20 .box20_cont .box20_img img{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box20 .box20_cont .box20_text{
+            width: 30%;
+            height: auto;
+            background-color: #DEEBF7;
+            padding-top: 10px;
+            padding-left: 10px;
+            
+        }
+        .bigbox .box20 .box20_cont .box20_text .box20_title{
+            width: 100%;
+            height: auto;
+            font-size: 26px;
+            font-weight: bold;
+            
+        }
+        .bigbox .box20 .box20_cont .box20_text .box20_title span{
+            font-size: 22px;
+        }
+        .bigbox .box20 .box20_cont .box20_text .box20_text_con{
+            width: 90%;
+            height: auto;
+            font-size: 18px;
+            
+            margin-top: 30px;
+            line-height: 1.5em;
+            list-style: none;
+        }
+        .bigbox .box20 .box20_cont .box20_text .box20_text_con li{
+            margin-bottom: 20px;
+        }
+        .bigbox .box21{
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+        }
+        .bigbox .box21 .box21_text{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box21 .box21_text .box21_title{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+        }
+        .bigbox .box21 .box21_text .box21_title span{
+            font-size: 18px;
+            font-weight: lighter;
+        }
+        .bigbox .box21 .box21_text .box21_text_con{
+            text-align: center;
+            font-size: 16px;
+            color: #000000;
+        }
+        .bigbox .box21 .box21_img{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .bigbox .box21 .box21_img img{
+            width: 90%;
+        }
+        .bigbox .box22{
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+        }
+        .bigbox .box22 .box22_top{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box22 .box22_top .box22_title{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+        }
+        .bigbox .box22 .box22_top .box22_title span{
+            font-size: 18px;
+            font-weight: lighter;
+        }
+        .bigbox .box22 .box22_bottom{
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+            display: flex;
+        }
+        .bigbox .box22 .box22_bottom .box22_img{
+            width: 70%;
+            height: auto;
+        }
+        .bigbox .box22 .box22_bottom .box22_img img{
+            width: 100%;
+            max-height: 500px;
+        }
+        .bigbox .box22 .box22_bottom .box22_text{
+            width: 30%;
+            padding-left: 20px;
+            padding-top: 20px;
+            background-color: #DEEBF7;
+        }
+        .bigbox .box22 .box22_bottom .box22_text .box22_text_title{
+            width: 100%;
+            height: auto;
+            font-size: 22px;
+            color: #000000;
+            font-weight: bold;
+            
+        }
+        .bigbox .box22 .box22_bottom .box22_text .box22_text_cont{
+            width: 90%;
+            height: auto;
+            font-size: 18px;
+            color: #000000;
+            margin-top: 30px;
+            list-style: none;
+            line-height: 1.5em;
+        }
+        .bigbox .box23{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box23 .box23_title{
+            width: 100%;
+            height: auto;
+        }
+        .bigbox .box23 .box23_title .box23_title_con{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            font-size: 26px;
+            color: #000000;
+            font-weight: bold;
+        }
+        .bigbox .box23 .box23_title span{
+            width: 100%;
+            height: auto;
+            font-size: 18px;
+            font-weight: lighter;
+            text-align: center;
+            display: block;
+            
+        }
+        .bigbox .box23 .box23_con{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .bigbox .box23 .box23_con .box23_text{
+            width: 40%;
+            height: auto;
+        }
+        .bigbox .box23 .box23_con .box23_text .box23_text_top{
+            width: 100%;
+            height: auto;
+            list-style: none;
+            font-size: 16px;
+            line-height: 2em;
+            color: #000000;
+            font-weight: lighter;
+            padding-top: 10px;
+        }
+        .bigbox .box23 .box23_con .box23_text  .box23_text_bottom{
+            width: 100%;
+            height: auto;
+            margin-top: 60px;
+            font-size: 16px;
+            color: #999;
+            font-weight: lighter;
+            line-height: 1.5em;
+        }
+        .bigbox .box23 .box23_con .box23_text  .box23_text_bottom .box23_text_bottom1{
+            float: left;
+        }
+        .bigbox .box23 .box23_con .box23_text  .box23_text_bottom .box23_text_bottom2{
+            float: left;
+            margin-left: 50px;
+        }
+        .bigbox .box23 .box23_con .box23_img{
+            width: 60%;
+            height: auto;
+        }
+        .bigbox .box23 .box23_con .box23_img img{
+            width: 100%!important;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="bigbox">
+<div class="box1">
+    <div class="box1_text">
+        <p class="box1_title">
+            冉冉崛起的恒星<br>
+            复地复城国际中心&nbsp;·&nbsp;泰巢<br>
+            <span style="font-size: 18px;line-height: 1rem;">T&C CORE FUCHENG INTERNATIONAL CENTER</span>
+        </p>
+        <p class="box1_con">
+            中国&nbsp;·&nbsp;成都&nbsp;·&nbsp;高新技术产业开发区<br>
+            <span style="font-size: 12px;color: #999;">CHINA CHENGDU Hi-Tech Industrial Development Zone</span>
+        </p>
+    </div>
+    <div class="box1_pic">
+        <img src="fucheng/top1.png" alt="pic">
+    </div>
+</div>
+<div class="box2">
+    <div class="box2_img">
+        <img src="fucheng/top2.png" alt="pic">
+    </div>
+    <div class="box2_text">
+        <p class="box2_title">
+            复城国际中心
+            <p style="color: #fff;">
+            Fucheng International Center
+            </p>
+        </p>
+        <p class="box2_con">
+           
+                23万平综合体&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;总&nbsp;&nbsp;楼&nbsp;&nbsp;层：29层<br>
+           
+           
+                标准楼高：4米&nbsp;&nbsp;&nbsp;&nbsp;停&nbsp;&nbsp;车&nbsp;&nbsp;位：1885个  <br>
+            
+         
+                 电&nbsp;&nbsp;梯：10部
+            
+        </p>
+        <p class="box2_con2">
+            
+                开&nbsp;&nbsp;发&nbsp;&nbsp;商：成都复地置业有限公司<br>
+                运&nbsp;营&nbsp;管&nbsp;理&nbsp;商：成都复地商业管理有限公司<br>
+                物&nbsp;&nbsp;业&nbsp;&nbsp;公&nbsp;&nbsp;司：戴德梁行物业管理有限公司
+           
+        </p>
+    </div>
+</div>
+<div class="box3">
+    <div class="box3_img">
+        <img src="fucheng/top3.png" alt="pic">
+    </div>
+    <div class="box3_text">
+        <p class="box3_title">
+            天府新城CBD<br>
+            <span style="font-size: 18px;font-weight: lighter;">Advantage</span>
+        </p>
+        <p class="box3_text_img">
+            <img src="fucheng/top4.png" alt="pic">
+        </p>        
+    </div>
+</div>
+<div class="box4">
+    <div class="box4_text">
+        <p class="box4_title">
+            平&nbsp;&nbsp;&nbsp;面&nbsp;&nbsp;图<br>
+            <span style="font-size: 18px;color: #000000;line-height: 5px;font-weight: lighter;">PLANAR GRAPH</span>
+        </p>
+    </div>
+    <div class="box4_img">
+        <div class="box4_img_cont">
+            <img src="fucheng/top5.png" alt="pic">
+            <p>
+                17F共享空间<br>
+                <hr style="width: 120px;margin: 0 auto;margin-top: 5px;background-color: #9b8e7f;">
+                <p style="font-size: 14px;margin-top: 5px;color: #999;">
+                    Commons space
+                </p>
+            </p>
+        </div>
+        <div class="box4_img_cont">
+            <img src="fucheng/top6.png" alt="pic">
+            <p>
+                24F办公空间<br>
+                <hr style="width: 120px;margin: 0 auto;margin-top: 5px;background-color: #9b8e7f;">
+                <p style="font-size: 14px;margin-top: 5px;color: #999;">
+                    Office space
+                </p>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="bigbox2">
+    <div class="bigbox">
+        <div class="box5">
+            <div class="box5_title">
+                <p>
+                    共享空间<br>
+                    <span style=" font-size: 18px;font-weight: lighter;margin-top: 0px;line-height: 10px;">COMMONS SPACE</span>
+                </p>
+            </div>
+            <div class="box5_cont">
+                <div class="box5_img_text">
+                    <img src="fucheng/top7.jpg" alt="pic">
+                    <p class="box5_text">
+                        泰巢服务中心，<br>
+                        多维度提供满意+惊喜贴心服务<br>
+                    </p>
+                </div>
+                <div class="box5_img_text">
+                    <img src="fucheng/top7.jpg" alt="pic">
+                    <p class="box5_text">
+                        共享洽谈区，<br>
+                        让工作氛围多一些温度
+                    </p>
+                </div>
+            </div>
+            <div class="box5_cont">
+                <div class="box5_img_text">
+                    <img src="fucheng/top7.jpg" alt="pic">
+                    <p class="box5_text">
+                        MAXHUB多媒体会议室，<br>
+                        助力商务高效沟通
+                    </p>
+                </div>
+                <div class="box5_img_text">
+                    <img src="fucheng/top7.jpg" alt="pic">
+                    <p class="box5_text">
+                        国风茶艺室，<br>
+                        推杯换盏，品茗怡情话将来
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bigbox">
+    <div class="box6">
+       <div class="box6_title">
+            <p>
+                办公空间<br>
+                <span style="font-size: 18px;font-weight: lighter;line-height: 10px;">WORKING SPACE</span>
+            </p>
+       </div>
+       <div class="box6_img_text">
+            <div class="box6_cont">
+                <div class="box6_img">
+                    <img src="fucheng/top12.jpg" alt="pic">
+                </div>
+                <div class="box6_text">
+                    <p class="box6_text_cont">
+                        前厅<br>
+                        <span style="font-size: 18px;font-weight: lighter;">Lobby</span>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="box6_cont2">
+                <div class="box6_text2">
+                    <p class="box6_text_cont2">
+                        前厅<br>
+                        <span style="font-size: 18px;font-weight: lighter;">Lobby</span>
+                    </p>                   
+                </div>
+                <div class="box6_img2">
+                    <img src="fucheng/top12.jpg" alt="pic">
+                </div>
+            </div>
+            <div class="box6_cont">
+                <div class="box6_img">
+                    <img src="fucheng/top12.jpg" alt="pic">
+                </div>
+                <div class="box6_text">
+                    <p class="box6_text_cont">
+                        前厅<br>
+                        <span style="font-size: 18px;font-weight: lighter;">Lobby</span>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="box6_cont2">
+                <div class="box6_text2">
+                    <p class="box6_text_cont2">
+                        前厅<br>
+                        <span style="font-size: 18px;font-weight: lighter;">Lobby</span>
+                    </p>                   
+                </div>
+                <div class="box6_img2">
+                    <img src="fucheng/top12.jpg" alt="pic">
+                </div>
+            </div>
+            <div class="box6_cont">
+                <div class="box6_img">
+                    <img src="fucheng/top12.jpg" alt="pic">
+                </div>
+                <div class="box6_text">
+                    <p class="box6_text_cont">
+                        前厅<br>
+                        <span style="font-size: 18px;font-weight: lighter;">Lobby</span>
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="box6_cont2">
+                <div class="box6_text2">
+                    <p class="box6_text_cont2">
+                        前厅<br>
+                        <span style="font-size: 18px;font-weight: lighter;">Lobby</span>
+                    </p>                   
+                </div>
+                <div class="box6_img2">
+                    <img src="fucheng/top12.jpg" alt="pic">
+                </div>
+            </div>        
+       </div>
+      
+    </div>
+
+    <div class="box7">
+        <div class="box7_text">
+            <p class="box7_title"> 
+                实景图<br>
+                <span style="font-size: 18px;line-height: 10px;font-weight: lighter;">REAL ENVIRONMENT</span>
+            </p>
+        </div>
+        <div class="box7_cont">
+            <div class="box7_img">
+                <img src="" alt="pic">
+                <img src="" alt="pic">
+                <img src="" alt="pic">
+            </div>
+            <div class="box7_img">
+                <img src="" alt="pic">
+                <img src="" alt="pic">
+                <img src="" alt="pic">
+            </div>
+            <div class="box7_img">
+                <img src="" alt="pic">
+                <img src="" alt="pic">
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="bigbox">
+<div class="box20">
+    <div class="box20_cont">
+        <div class="box20_img">
+            <img src="fucheng/中关村1.png" alt="pic">
+        </div>
+        <div class="box20_text">
+            <p class="box20_title">
+                北京海淀区政府重点项目<br>
+                <span>
+                一极核心地带 打造人工智能亿级产业群    
+                </span>
+            </p>
+            
+                <ul class="box20_text_con">
+                    <li>
+                        硅谷项目地处北大西门街区核心位置
+                    </li>
+                    <li>
+                        属于中关村科学城“一轴一廊一带，一极四组团多节点”空间结构中的“一极” 
+                    </li>
+                    <li>
+                        周边北京大学、清华大学、人民大学等知名高校云集，高精尖人才济济
+                    </li>
+                    <li>
+                        毗邻中科院、中关村国家自主创新示范区展示中心、中关村创业大街、中关村智造大街等科研院所、创新中心，技术资源极其丰富。
+
+                    </li>
+                </ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="box20">
+    <div class="box20_cont">
+        <div class="box20_text">
+            <p class="box20_title">
+                步距仅200米地铁站，高效商务<br>
+                <span>
+                距离项目最近的地铁站16号线“万泉河桥站”
+                </span>
+            </p>
+                <p class="box20_text_con">
+                    2020年海淀交通大升级！！！
+                </p>
+                <ul class="box20_text_con">
+                    <li>
+                        3条轨道交通：16号线、19号线一期、12号线
+                    </li>
+                    <li>
+                        45条市政道路
+                    </li>
+                    <li>
+                        16号地铁线中段年底通车
+                    </li>
+                    <li>
+                        66公里自行车步行系统
+                    </li>
+                </ul>
+            
+        </div>
+        
+        <div class="box20_img">
+            <img src="fucheng/中关村1.png" alt="pic">
+        </div>
+    </div>
+</div>
+
+</div>
+
+<div class="bigbox">
+    <div class="box21">
+        <div class="box21_text">
+            <p class="box21_title">
+                中关村首个人工智能创享空间<br>
+                <span>围绕IAB+NEM"战略打造亿级产业集群</span>
+            </p>
+            <p class="box21_text_con">
+                整合园区现有行业资源做产业升级，围绕人工智能、生物医药、文化创意做产业链导入
+            </p>
+        </div>
+        <div class="box21_img">
+            <img src="fucheng/中关村创享空间.png" alt="pic">
+        </div>
+    </div>
+
+    <div class="box21">
+        <div class="box21_text">
+            <p class="box21_title">
+                智慧楼宇管理<br>
+                <span>采用智慧楼宇loT系统平台</span>
+            </p>
+        </div>
+        <div class="box21_img">
+            <img src="fucheng/中关村楼宇.png" alt="pic">
+        </div>
+    </div>
+</div>
+
+<div class="bigbox">
+    <div class="box22">
+        <div class="box22_top">
+            <p class="box22_title">
+                北京中关村唯一新增地标项目<br>
+                <span>区内唯一新增,“构建人工智能聚集区开放创新生态”</span>
+            </p>
+        </div>
+        <div class="box22_bottom">
+            <div class="box22_img">
+                <img src="fucheng/中关村聚集区.png" alt="pic">
+            </div>
+            <div class="box22_text">
+                <p class="box22_text_title">
+                    集聚企业（部分）
+                </p>
+                <ul class="box22_text_cont"> 
+                    <li>人加智能机器人有限公司</li>
+                    <li>北京云服科技有限公司</li>
+                    <li>北京小鹏汽车科技有限公司</li>
+                    <li>中源智库（北京）科技有限公司</li>
+                    <li>字节跳动</li>
+                    <li>北京惠迪圣业绿色生态环境科技有限公司</li>
+                    <li>地壳机器人科技有限公司</li>
+                    <li>北京贝奇睿科技有限公司</li>
+                    <li>北京欧曼科技有限公司</li>
+                    <li>北京亿中景科技发展有限公司</li>
+                    <li>北京鱼家科技有限公司</li>
+                    <li>北京飞乐兴和科技发展有限公司</li>
+                    <li>北京硅谷科技发展有限责任公司</li>
+                    <li>北京科博展信科技有限公司</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bigbox">
+    <div class="box23">
+        <div class="box23_title">
+            <p class="box23_title_con">
+                紧邻多个国家级交易中心
+            </p>
+            <span>
+                CLOSE TO NATIONAL TRADING CENTER
+            </span>
+        </div>
+        <div class="box23_con">
+            <div class="box23_text">
+                <ul class="box23_text_top">
+                    <li>步行距离可达多个交易中心，位置得天独厚，</li>
+                    <li>该区域汇聚了大量优秀企业，</li>
+                    <li>并对整个业态的发展形成了极佳的良性竞争。</li>
+                    <li>激烈的市场拼杀过程，使资源得到最优化配置，</li>
+                    <li>让企业在战争中学习战争，</li>
+                    <li>是残忍，亦是在磨砺中练就对标国际名企的实力！</li>
+                    <li>先天优势，自然成就卓尔不凡。</li>
+                </ul>
+                <div class="box23_text_bottom">
+                    <ul class="box23_text_bottom1">
+                        <li>上海期货交易所</li>
+                        <li>中央结算公司</li>
+                        <li>中国金融期货交易所 </li>
+                    </ul>
+                    <ul class="box23_text_bottom2">
+                        <li>钻石交易中心</li>
+                        <li>上海证券交易所</li>
+                        <li>上海保险交易所</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="box23_img">
+                <img src="fucheng/top1-pinan.png" alt="pic">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

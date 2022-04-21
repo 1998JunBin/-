@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">.jianju{
+        padding: 44px;
+    }
+    .bigbox{
+        width: 100%;
+        height: auto; 
+    }
+.bigbox .top {
+width: inherit;
+height: auto;
+background-color: #ececec;
+text-align: center;
+}
+.bigbox .top .title {
+text-align: center;
+font-size: 30px;
+color: #333333;
+font-weight: bold;
+padding-bottom: 16px;
+border-bottom: 2px solid #115cb1;
+margin-bottom: 20px;
+line-height: 1.5em;
+display: inline-block;
+}
+    .bigbox .top .top_content{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+.bigbox .top .top_content .text {
+width: 65%;
+height: auto;
+text-align: left;
+}
+    .bigbox .top .top_content .text p:nth-of-type(1){
+        font-size:24px ;
+        color: #333333;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 30px;
+        line-height: 1.5em;
+    }
+    .bigbox .top .top_content .text p:nth-of-type(2){
+        font-size: 16px;
+        color: #333333;
+        font-weight: normal;
+        line-height: 30px;
+    }
+.bigbox .top .top_content .img {
+width: 30%;
+height: auto;
+text-align: center;
+}
+    .bigbox .top .top_content .img img{
+        width: auto;
+        height: 100%;
+    }
+.bigbox .middle {
+width: 100%;
+height: auto;
+background: url(/repository/portal-local/new2022030419262233026/cms/image/027ff1a3-3f84-4b6a-8bd2-ad91cd34d4f7.jpg) no-repeat;
+background-position: center;
+background-size: cover;
+} 
+    .bigbox .middle .title2{
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+        line-height: 1.5em;
+        font-weight: normal;
+        margin-bottom: 45px;
+    }
+.bigbox .middle .content2 {
+width: 100%;
+height: auto;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+    .bigbox .middle .content2 div{
+        width: calc((100% - 100px) / 5);
+        min-height: 190px;
+        padding: 20px 40px;
+        margin-bottom: 25px;
+        background-color: #fff;
+        border-radius: 20px;
+        text-align: center;
+    }
+.bigbox .middle .content2 div img {
+width: 100%;
+height: auto;
+margin-bottom: 15px;
+}
+    .bigbox .middle .content2 div p{
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+        font-weight: normal;
+        line-height: 1.5em;
+    }
+    .bigbox .bottom{
+        width: 100%;
+        height: auto;
+        background-color:#ececec ;
+    }
+    .bigbox .bottom .title3{
+        font-size: 24px;
+        color:#333333 ;
+        font-weight: normal;
+        line-height: 1.5em;
+        margin-bottom:30px ;
+text-align: center;
+    }
+.bigbox .bottom .content3 {
+width: 100%;
+height: auto;
+display: flex;
+justify-content: space-between;
+margin-bottom: 50px;
+flex-wrap: wrap;
+}
+    .bigbox .bottom .content3 .img_text{
+        width: calc((100% - 40px) / 2);
+        min-height:190px ;
+        padding: 30px;
+        background-color: #fff;
+        border-radius:20px ;
+        display:flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+flex-wrap: wrap;
+    }
+    .bigbox .bottom .content3 .img_text .img3{
+width: auto;
+height: auto;
+margin-right: 30px;
+    }
+    .bigbox .bottom .content3 .img_text .img3 img{
+        width: 100%;
+        height: auto;
+    }
+    .bigbox .bottom .content3 .img_text .text3{
+        flex: 70%;
+    }
+    .bigbox .bottom .content3 .img_text .text3 p:nth-of-type(1){
+        font-size: 18px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 15px;
+        line-height: 1.5em;
+    }   
+    .bigbox .bottom .content3 .img_text .text3 p:nth-of-type(2){
+        font-size: 16px;
+        color: #333;
+        font-weight: normal;
+        line-height: 28px;
+    }
+    .bigbox .bottom .content4{
+        width: 100%;
+        height: auto;
+    }
+    .bigbox .bottom .content4>p{
+        font-size: 24px;
+        color: #333;
+        font-weight: normal;
+        line-height: 1.5em;
+        margin-bottom: 35px;
+text-align: center;
+    }
+    .bigbox .bottom .content4 .e_cont{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .bigbox .bottom .content4 .e_cont .img_text2{
+        width: calc(100% / 5);
+        height: auto;
+        text-align: center;
+    }
+    .bigbox .bottom .content4 .e_cont .img_text2 img{
+        height: auto;
+        width: auto;
+        margin-bottom:20px ;
+    }
+    .bigbox .bottom .content4 .e_cont .img_text2 p{
+        font-size: 16px;
+        color: #333333;
+        font-weight: normal;
+        line-height: 1.5em;
+    }
+    @media only screen and (max-width:769px){
+        .jianju{
+            padding: 20px;
+        }
+        .bigbox .top .top_content{
+            flex-wrap: wrap;
+        }
+        .bigbox .top .top_content .text{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .bigbox .top .top_content .text p:nth-of-type(1){
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .bigbox .top .top_content .img{
+            width: 100%;
+        }
+
+        .bigbox .middle .content2 div{
+            width: calc((100% - 20px) / 2);
+            padding: 15px 20px;
+        }
+        .bigbox .middle .content2 div img{
+            max-width: 70%!important;
+        }
+        .bigbox .bottom .content3 .img_text{
+            width: 100%;
+
+        }
+        .bigbox .bottom .content3 .img_text .img3{
+            margin: 0 auto 20px auto;
+
+        }
+        .bigbox .bottom .content3 .img_text .text3 p:nth-of-type(1){
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .bigbox .bottom .content4 .e_cont{
+            flex-wrap: wrap;
+
+        }
+        .bigbox .bottom .content4 .e_cont .img_text2{
+            width: calc(100% / 2);
+            margin-bottom: 30px;
+        }
+        .bigbox .bottom .content4 .e_cont .img_text2 img{
+            margin-bottom: 15px;
+        }
+    }
+</style>
+</head> 
+<body>
+<div class="bigbox">
+    <div class="top jianju">
+        <p class="title">
+            业务详情
+        </p>
+        <div class="top_content">
+            <div class="text">
+                <p>
+                    业务概述
+                </p>
+                <p>
+                    发明，是指对产品、方法或者其改进所提出的新的技术方案。<br>
+                    发明专利保护实现某项产品或方法的技术方案，因此可分为产品发明和方法发明。<br>
+                    发明专利要求的技术含量较高，特别是对新颖性、创造性的要求较高，授权后的权利稳定性高。<br>
+                    发明专利申请要经过受理、初步审查、公布、实质审查和授权/驳回五个阶段，申请周期一般需要至少18个月以上。如进行优先审查或快速预审案件，申请周期可缩短为2-10个月，详情可咨询客服人员。<br>
+                    发明专利的保护期限为20年。<br>
+                    深可信擅长领域：化学化工；新能源；航空航天；互联网技术；智能电子；集成电路；材料科学与工程；生物技术；电力工程；建筑工程；生物化学；制药工程；化学工程与工艺；药学；应用物理等。
+                </p>
+            </div>
+            <div class="img">
+                <img src="" alt="pic">
+            </div>
+        </div>
+    </div>
+
+    <div class="middle jianju">
+        <p class="title2">
+            专利业务
+        </p>
+        <div class="content2">
+            <div>
+                <img src="" alt="pic">
+                <p>专利深度检索、多维度专利挖掘、布局</p>
+            </div>
+            <div>
+                <img src="" alt="pic">
+                <p>专利深度检索、多维度专利挖掘、布局</p>
+            </div>
+            <div>
+                <img src="" alt="pic">
+                <p>专利深度检索、多维度专利挖掘、布局</p>
+            </div>
+            <div>
+                <img src="" alt="pic">
+                <p>专利深度检索、多维度专利挖掘、布局</p>
+            </div>
+            <div>
+                <img src="" alt="pic">
+                <p>专利深度检索、多维度专利挖掘、布局</p>
+            </div>
+            <div>
+                <img src="" alt="pic">
+                <p>专利深度检索、多维度专利挖掘、布局</p>
+            </div>
+            <div>
+                <img src="" alt="pic">
+                <p>专利深度检索、多维度专利挖掘、布局</p>
+            </div>
+            <div>
+                <img src="" alt="pic">
+                <p>专利深度检索、多维度专利挖掘、布局</p>
+            </div>
+            <div>
+                <img src="" alt="pic">
+                <p>专利深度检索、多维度专利挖掘、布局</p>
+            </div>
+            <div>
+                <img src="" alt="pic">
+                <p>专利深度检索、多维度专利挖掘、布局</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom jianju">
+        <p class="title3">
+            专利价值
+        </p>
+        <div class="content3">
+            <div class="img_text">
+                <div class="img3">
+                    <img src="" alt="pic">
+                </div>
+                <div class="text3">
+                    <p>
+                        独占市场
+                    </p>
+                    <p>
+                        扩大市场份额，独占市场，获得垄断红利,专利是市场竞争的利器；种产品只要被授予专利权，就相当于在市场上具有独占权，别人想要使用需要得到许可。
+                    </p>
+                </div>
+            </div>
+            <div class="img_text">
+                <div class="img3">
+                    <img src="" alt="pic">
+                </div>
+                <div class="text3">
+                    <p>
+                        独占市场
+                    </p>
+                    <p>
+                        扩大市场份额，独占市场，获得垄断红利,专利是市场竞争的利器；种产品只要被授予专利权，就相当于在市场上具有独占权，别人想要使用需要得到许可。
+                    </p>
+                </div>
+            </div>
+            <div class="img_text">
+                <div class="img3">
+                    <img src="" alt="pic">
+                </div>
+                <div class="text3">
+                    <p>
+                        独占市场
+                    </p>
+                    <p>
+                        扩大市场份额，独占市场，获得垄断红利,专利是市场竞争的利器；种产品只要被授予专利权，就相当于在市场上具有独占权，别人想要使用需要得到许可。
+                    </p>
+                </div>
+            </div>
+            <div class="img_text">
+                <div class="img3">
+                    <img src="" alt="pic">
+                </div>
+                <div class="text3">
+                    <p>
+                        独占市场
+                    </p>
+                    <p>
+                        扩大市场份额，独占市场，获得垄断红利,专利是市场竞争的利器；种产品只要被授予专利权，就相当于在市场上具有独占权，别人想要使用需要得到许可。
+                    </p>
+                </div>
+            </div>
+            <div class="img_text">
+                <div class="img3">
+                    <img src="" alt="pic">
+                </div>
+                <div class="text3">
+                    <p>
+                        独占市场
+                    </p>
+                    <p>
+                        扩大市场份额，独占市场，获得垄断红利,专利是市场竞争的利器；种产品只要被授予专利权，就相当于在市场上具有独占权，别人想要使用需要得到许可。
+                    </p>
+                </div>
+            </div>
+            <div class="img_text">
+                <div class="img3">
+                    <img src="" alt="pic">
+                </div>
+                <div class="text3">
+                    <p>
+                        独占市场
+                    </p>
+                    <p>
+                        扩大市场份额，独占市场，获得垄断红利,专利是市场竞争的利器；种产品只要被授予专利权，就相当于在市场上具有独占权，别人想要使用需要得到许可。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content4">
+            <p>
+                深可信优势
+            </p>
+            <div class="e_cont">
+                <div class="img_text2">
+                    <img src="" alt="pic">
+                    <p>
+                        专业培训
+                    </p>
+                </div>
+                <div class="img_text2">
+                    <img src="" alt="pic">
+                    <p>
+                        专业培训
+                    </p>
+                </div>
+                <div class="img_text2">
+                    <img src="" alt="pic">
+                    <p>
+                        专业培训
+                    </p>
+                </div>
+                <div class="img_text2">
+                    <img src="" alt="pic">
+                    <p>
+                        专业培训
+                    </p>
+                </div>
+                <div class="img_text2">
+                    <img src="" alt="pic">
+                    <p>
+                        专业培训
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* THIS FILE IS PART OF Robin
+# Common_robin.css - The css of Common Styles
+# Copyright (c) 2022 Robin
+*/
+/*循环体多行多列的样式开始*/
+/*pc端*/
+	#jb div[class^=e_loop].pm_pc_m_n .p_loopitem{ /*间隔 m px，分 n 列*/
+		flex: 0 0 calc((100* - (n-1*var(--mg_m))) / n); 
+		margin-bottom: var(--mg_m);
+		margin-right: var(--mg_m);
+	}
+	#jb div[class^=e_loop].pm_pc_m_n .p_loopitem:last-child{
+		margin-right: 0px;
+	}
+/*循环体多行多列的样式结束*/
+
+/*移动端样式开始*/
+@media only screen and (max-width:768px) {
+
+	/*初始部分开始*/
+	/*栅格去除默认移动端样式*/
+	#jb .p_gridbox .p_gridCell:nth-child(1n + 1) {
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+		clear: left;
+	}
+
+	/*首页模块样式*/
+	#jb.main.mob.home>div[id^=c_static]:not(:first-child) {
+		/*除了banner模块，其他模块上下45左右10的pd填充*/
+		padding: var(--pd);
+	}
+
+	/*首页banner样式*/
+	#jb.main.mob.home>div[id^=c_static]:first-child {
+		margin-top: var(--nav_hg);
+		/*导航高度*/
+		min-height: 0px;
+	}
+
+	#jb.main.mob.home div[class^=e_banner] {
+		height: 50vw;
+	}
+
+	/*banner的切换按钮样式*/
+	#jb.main.mob.home div[class^=e_banner] .swiper-container .swiper-pagination {
+		bottom: 0;
+	}
+
+	#jb.main.mob.home div[class^=e_banner] .swiper-container .swiper-pagination-bullet {
+		margin: 0 5px;
+		width: 8px;
+		height: 8px;
+	}
+
+	/*内页banner样式*/
+	#jb.main.mob.inpage div[id^=c_banner] {
+		margin-top: var(--nav_hg);
+		/*导航高度*/
+		min-height: 0px;
+	}
+
+	#jb.main.mob.inpage div[id^=c_banner] div[class^=e_banner] {
+		height: 50vw;
+	}
+
+	#jb.main.mob.inpage div[id^=c_banner] div[class^=e_banner] .swiper-slide {
+		height: auto;
+	}
+
+	#jb.main.mob.inpage div[id^=c_banner] div[class^=e_banner] .p_btitle {
+		/*banner标题*/
+		font-size: var(--fs_28);
+	}
+
+	#jb.main.mob.inpage div[id^=c_banner] div[class^=e_banner] .p_subtitle {
+		/*banner概要*/
+		display: initial;
+		font-size: var(--fs_38);
+	}
+
+	/*初始部分结束*/
+}
+
+/*移动端样式结束*/
+
+:root {
+	/*导航高度*/
+	--nav_hg: 60px;
+
+	/*padding值*/
+	--pd: 45px 10px;
+
+    /*间距值*/
+	--mg_10:10px;
+	--mg_15:15px;
+	--mg_20:20px;
+	--mg_m:mpx;
+	
+	/*字体大小*/
+	--fs_18: 18px;
+	--fs_28: 28px;
+	--fs_32: 32px;
+	--fs_38: 38px;
+	--fs_52: 52px;
+
+}
